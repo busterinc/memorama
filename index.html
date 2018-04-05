@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="apple-touch-icon" sizes="76x76" href="img/pacman.png">
+	<link rel="icon" type="image/png" href="img/pacman.png">
+	<title>Brain Twist::Arcade</title>
+	<meta name="description" content="Juego de memoria Brain Twist, Lets play!!"/>
+	<meta name="robots" content="noindex">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="" name="keywords">
+	<meta content="" name="GameBoy">
+
+  <script src="jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="gameboy" onclick="startPlay();">
+    <div class="screen-cont">
+      <div class="power"></div>
+      <div class="screen">
+        <div class="header copy" style="text-align:center">NINTENDO®</div>
+        <div class="animated-text end">Brain Twist</div>
+      </div>
+    </div>
+
+    <div class="controls-cont">
+      <div class="btn-direction">
+      <div class="vertical"></div>
+      <div class="horizontal"></div></div>
+      <div class="btn-AB"></div>
+      <div class="btn-start-select"></div>
+    </div>
+
+    <div class="speakers"></div>
+    <div class="on-off">&lt; off-on &gt;</div>
+    <div class="phones">phones</div>
+  </div>
+
+</body>
+</html>
+<script>
+  function startPlay()
+    {
+      window.location.href = "arcade.html";
+    }
+</script>

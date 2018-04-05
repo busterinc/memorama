@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="apple-touch-icon" sizes="76x76" href="img/pacman.png">
+	<link rel="icon" type="image/png" href="img/pacman.png">
+	<title>Brain Twist::Arcade</title>
+	<meta name="description" content="Juego de memoria Brain Twist, Lets play!!"/>
+	<meta name="robots" content="noindex">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="" name="keywords">
+	<meta content="" name="description">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<canvas id="canvas" style="position: absolute; display:none"></canvas>
+	<div id="divCreditos"></div>
+	<div id="divContenedor">
+		<ul></ul>
+		<div id="divInicio">
+			<div id="shw_best_score">
+					<p id="avatar_id"></p>
+					<p id="best_score"></p>
+					<p id="best_time"></p>
+			</div>
+			<div id="divInferior">
+				<div id="shw_err_avatar">
+			      <p id="err_avatar"></p>
+			  </div>
+				<label id="avatarLabel" for="avatar" class="text-justify">Avatar</label>
+				<input type="text" style="margin-bottom:10px;" name="avatar" id="avatar" placeholder="@busterinc" required pattern="[a-zA-Z- _-@]{3,15}" onchange="validAvatar();">
+				<p>Preparate para entrar al mejor juego de memoria... BrainTwist!!!<br></p>
+				<button id="btnJugar" disabled class="button button2">START</button>
+			</div>
+		</div>
+		<div id="divContador">
+			<p class="letraScore">Press Start to PLAY</p>
+		</div>
+	</div>
+</body>
+</html>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/actions.js"></script>
+<script type="text/javascript" src="js/confetti.js"></script>
